@@ -10,6 +10,7 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
+      Container: 'app/components/Container'
     },
     extensions: ['', '.js', '.jsx']
   },

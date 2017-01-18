@@ -1,8 +1,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var Container = require('Container');
 
 ReactDOM.render(
-  <h1>Hello React!</h1>,
+  <Container/>,
   document.getElementById('container')
 );

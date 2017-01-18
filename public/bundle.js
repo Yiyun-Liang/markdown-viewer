@@ -49,11 +49,9 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 
-	ReactDOM.render(React.createElement(
-	  'h1',
-	  null,
-	  'Hello React!'
-	), document.getElementById('container'));
+	var Container = __webpack_require__(178);
+
+	ReactDOM.render(React.createElement(Container, null), document.getElementById('container'));
 
 /***/ },
 /* 1 */
@@ -21488,6 +21486,32 @@
 
 	module.exports = ReactDOMInvalidARIAHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Container = React.createClass({
+	  displayName: 'Container',
+
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'p',
+	        null,
+	        'Hello'
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Container;
 
 /***/ }
 /******/ ]);
